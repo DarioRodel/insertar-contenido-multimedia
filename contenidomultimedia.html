@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <div style="text-align:center">
+        <h2>Video</h2>
+        <button onclick="Play()">Play</button>
+        <button onclick="Pausa()">Pausa</button>
+        <button onclick="Grande()">Grande</button>
+        <button onclick="Pequeño()">Pequeño</button>
+        <button onclick="Normal()">Normal</button>
+        <br><br>
+        <video id="video" width="420">
+            <source src="Snoop Dogg - Drop It Like It's Hot (Official Music Video) ft. Pharrell Williams.mp4">
+        </video>
+
+    </div>
+    <div style="text-align: center;">
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="Pinto Wahin - Gayetano (Official Video).mp3">
+        </audio>
+    </div>
+    <div style="text-align: center;">
+        <h2>YouTube Video</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY" allow="autoplay" allowfullscreen></iframe>
+    </div>
+</body>
+<script>
+    let video = document.getElementById("video");
+    function Play() {
+        video.play();
+    }
+    function Pausa() {
+        video.pause();
+    }
+    function Grande() {
+        video.style.width = "700px";
+    }
+    function Pequeño() {
+        video.style.width = "350px";
+    }
+    function Normal() {
+        video.style.width = "450px";
+    }
+</script>
+
+</html>
